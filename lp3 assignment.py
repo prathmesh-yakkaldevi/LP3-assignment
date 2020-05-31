@@ -62,7 +62,6 @@ def accuracy(l,col):
     else:
         return 0
 
-a=list()
 color1,color2,color3=0,0,0
 tcount=0
 ccount=0
@@ -83,7 +82,6 @@ for _ in range(600):
         color1,color3 = 1, 3
     if(j == k and j>i):
         color2,color3 = 2, 3
-    a.append([[i,j,k],[color1,color2,color3]])
     if (color1 != 0 and color2 == 0 and color3 == 0):
         tcount+=1
         temp=accuracy([i,j,k],color1)
